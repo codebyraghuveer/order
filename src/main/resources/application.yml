@@ -1,0 +1,18 @@
+server:
+  port: 9094
+
+spring:
+  application:
+    name: ORDER-SERVICE
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017/
+      host: localhost
+      port: 27017
+      username: admin
+      password: admin
+      database: order_db
+      repositories:
+        enabled: true
